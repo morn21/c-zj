@@ -2,19 +2,31 @@
 
 ### 灵感有了，就去造境。
 
-用 AI 生成图片、创作视频、合成语音与音乐。也可以把这些能力接入 WorkBuddy，让 AI 助手帮你完成创作。
+**用造境工坊 Skill，一键为你的 AI 助手接入视频创作所需的工具能力。**
 
-[开始创作](https://cc.oozoo.cc/) · [快速开始](https://cc.oozoo.cc/developer/docs) · [模型与接口文档](https://cc.oozoo.cc/developer/docs/diffusion-models)
+生图、生视频、语音合成、音乐生成、音色克隆……从画面素材到旁白配音、背景音乐，把创作需求交给支持 Skill 的 AI 助手，让它调用造境工坊生成素材、查询进度并获取结果，配合你的剪辑工具完成视频创作。
+
+[获得 Skill](https://cc.oozoo.cc/developer/docs/skill) · [开始创作](https://cc.oozoo.cc/) · [快速开始](https://cc.oozoo.cc/developer/docs) · [模型与接口文档](https://cc.oozoo.cc/developer/docs/diffusion-models)
+
+## 先给 AI 助手装上创作能力
+
+1. 打开 [获得 Skill](https://cc.oozoo.cc/developer/docs/skill)，点击下载。未登录时，验证邮箱即可登录或自动注册。
+2. 将下载的 `skill-cc_oozoo_cc.md` 交给支持 Skill 的 AI 助手。使用标准 Skill 目录的工具，可将文件改名为 `SKILL.md`，放入 `oozoo-creative` 目录；具体安装方式以所用工具为准。
+3. 告诉它你的创作需求，让它按接入文档选择模型、提交任务并获取结果。
+
+下载文件已包含你的 API Key，请妥善保存，不要公开分享或提交到代码仓库。下载 Skill 免费，模型调用按平台积分规则计费，可用模型以账号授权为准。
 
 ## 从一句话开始
 
-在 WorkBuddy 中提出创作需求，让它通过造境工坊完成生成、查询进度和获取结果。
+让 AI 助手成为你的视频创作搭档：生成分镜画面、补充视频镜头、制作旁白和背景音乐，再把素材用于剪辑。
 
-> 请用造境工坊生成一张图，一只橘猫坐在窗边晒太阳，温暖的午后光线。
+> 请用造境工坊为我的旅行短片生成一张海边日落的封面，画面温暖，有电影感。
 
-> 请用造境工坊把这段文字合成为语音，声音自然、清晰。
+> 请用造境工坊把这张风景图生成一段视频，镜头缓慢推进，作为短片的开场素材。
 
-> 请用造境工坊创作一段轻快的音乐，适合作为旅行视频的背景。
+> 请用造境工坊把这段文案合成为自然清晰的旁白，并生成一段轻快的旅行背景音乐。
+
+> 请用我提供的参考录音制作个人音色，再用这个音色为短片配音。
 
 ## 你可以做什么
 
@@ -40,20 +52,21 @@
 
 [打开造境工坊](https://cc.oozoo.cc/)
 
-## 交给 WorkBuddy
+## 交给 WorkBuddy 或其他 AI 助手
 
-1. 把下方提示词发送给 WorkBuddy，让它阅读接入文档。
-2. 注册造境工坊账号，在控制台创建 API Key，并按 WorkBuddy 的指引安全配置。
-3. 告诉 WorkBuddy 你想生成什么。
-4. 在 WorkBuddy 或造境工坊「我的任务」中查看结果。
+支持 Skill 的工具可以直接使用上面的下载入口；也可以将以下提示词交给 AI 助手，从阅读文档开始接入：
 
 ```text
-请帮我接入造境工坊。先阅读接入文档：
+请帮我接入造境工坊，为我的视频创作提供生图、生视频、语音合成、音乐生成和音色克隆等工具能力。
+先阅读接入文档和 Skill 获取说明：
+https://cc.oozoo.cc/developer/docs/skill
 https://cc.oozoo.cc/developer/docs
 
-读完后，告诉我如何安全配置 API Key。
-等我发出创作指令，再按文档提交任务、查询进度并展示结果。
+指导我完成 Skill 安装或安全配置 API Key，不要在对话中展示完整密钥。
+等我发出创作指令，再按最新文档提交任务、查询进度并展示结果。
 ```
+
+Skill 会引导助手以最新接入文档为准：短期内可复用已学习的接口信息，隔一段时间或遇到接口、参数相关错误时重新查阅，跟进平台更新。
 
 ## 接入你的应用
 
@@ -84,6 +97,7 @@ https://cc.oozoo.cc/developer/docs
 
 | 页面 | 内容 |
 | --- | --- |
+| [获得 Skill](https://cc.oozoo.cc/developer/docs/skill) | 下载已配置 API Key 的 Skill，接入 AI 助手 |
 | [快速开始](https://cc.oozoo.cc/developer/docs) | 从注册、创建 API Key 到完成第一次创作 |
 | [认证方式与价格](https://cc.oozoo.cc/developer/docs/pricing) | API 认证、积分与模型价格 |
 | [回归模型](https://cc.oozoo.cc/developer/docs/regression-models) | 文本模型兼容接口与配置 |
