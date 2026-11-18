@@ -10,6 +10,8 @@
 
 ## 先给 AI 助手装上创作能力
 
+**注册码限时免费，可不填。** 验证邮箱即可登录或注册并获得 Skill，让你的 AI 助手开始创作。
+
 1. 打开 [获得 Skill](https://cc.oozoo.cc/developer/docs/skill)，点击下载。未登录时，验证邮箱即可登录或自动注册。
 2. 将下载的 `skill-cc_oozoo_cc.md` 交给支持 Skill 的 AI 助手。使用标准 Skill 目录的工具，可将文件改名为 `SKILL.md`，放入 `oozoo-creative` 目录；具体安装方式以所用工具为准。
 3. 告诉它你的创作需求，让它按接入文档选择模型、提交任务并获取结果。
